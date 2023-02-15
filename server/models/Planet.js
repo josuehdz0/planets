@@ -6,7 +6,7 @@ export const PlanetSchema = new Schema({
   name: {type: String, required: true, minLength: 3},
   biom: {type: String, required: true, default: ''},
   atmosphere: {type: Boolean},
-  galaxyId: {type: ObjectId , ref: 'Galaxy'}
+  galaxyId: {type: ObjectId ,required:true, ref: 'Galaxy'}
 }, {timestamps: true, toJSON: {virtuals: true}})
 
 

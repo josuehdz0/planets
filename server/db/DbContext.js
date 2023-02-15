@@ -8,7 +8,6 @@ class DbContext {
   Values = mongoose.model('Value', ValueSchema);
   Account = mongoose.model('Account', AccountSchema);
   Galaxys = mongoose.model('Galaxy', GalaxySchema);
-
   Planets = mongoose.model('Planet', PlanetSchema)
 }
 

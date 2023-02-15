@@ -8,6 +8,7 @@ export class GalaxysController extends BaseController{
     this.router
       .get('',this.getGalaxys)
       .post('',this.createGalaxy)
+      .get('/:galaxyId/planets', this.getPlanets)
   }
   async getGalaxys(req, res, next) {
     try {
